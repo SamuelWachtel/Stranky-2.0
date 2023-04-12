@@ -1,0 +1,575 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonty/Poppins-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonty/Poppins-ExtraBold.ttf);
+  font-weight: bold;
+}
+
+body {
+  background-image: url(obrazky/wallpaperflare.com_wallpaper.jpg);
+  font: 16px "Poppins";
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  height: 130px;
+  position: fixed;
+  width: 100%;
+  background-color: #1b1b1bd1;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 18px;
+  box-sizing: border-box;
+  display: block;
+  margin: 5% 0 0 8%;
+  align-content: end;
+}
+
+.logo h1 {
+  margin: 0px 0px;
+}
+
+.logo a {
+  border: 0px;
+}
+
+.uni {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.zalozky {
+  display: flex;
+  grid-column-start: 1;
+  grid-column: 1/3;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 16px 10px 3px 0;
+}
+
+.zalozky a:hover, .aktivni a  {
+  border-bottom: 3px solid #255df5;
+}
+
+.socky li {
+  padding: 5px 0 0 4px;
+}
+
+.socky {
+  margin: 6% 0 0 -7%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  padding: 0;
+}
+
+.socky a:hover{
+  filter: brightness(170%) contrast(85%);
+  border: 0;
+}
+
+article {
+  color: white;
+  margin: 0 2%;
+  text-shadow: 3px 3px 7px #000000;
+  padding: 100px 0 20px 0;
+}
+
+section {
+  color: white;
+  margin: 0 2%;
+  text-shadow: 3px 3px 7px #000000;
+  padding: 100px 0 20px 0;
+}
+
+.obrazek {
+  display: flex;
+  justify-content: center;
+}
+
+.obrazek img {
+  border-radius: 35px;
+}
+
+article h1 {
+  margin: 10px 2%;
+  font-size: 2.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: max-content;
+  border-bottom: 4px solid #255df5;
+}
+
+article h2 {
+  font-size: 2em;
+  width: max-content;
+  margin: 6% 0;
+}
+
+.tabulka2, .tabulka3, .tabulka4, .tabulka5, .tabulka6 {
+  padding-top: 70px;
+}
+
+.tabulka1, .tabulka2, .tabulka3, .tabulka4 {
+  display: flex;
+  justify-content: center;
+}
+
+article header {
+  height: 40px;
+}
+
+article section p {
+  margin-bottom: 1.5em;
+  line-height: 1.8em;
+  padding: 5px 0;
+}
+
+article section a {
+  color: #255df5;
+}
+
+article section a:hover {
+  color: #255df5;
+  filter: brightness(170%) contrast(85%);
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+#footer {
+  position: absolute;
+  bottom: -80px;
+}
+
+footer {
+  width: 100%;
+  min-width: 351px;
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  background: #58585894;
+  padding: 40px 0 3px 0;
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+}
+
+.text-footer {
+  padding: 15px 3px 0 3px;
+}
+
+footer a {
+  color: #eb5a00;
+  text-decoration: solid;
+}
+
+footer a:hover {
+  color: #eb5a00;
+  text-decoration: solid;
+  filter: brightness(170%) contrast(85%);
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.centrovany {
+  text-align: center;
+}
+
+#reference img {
+  border: 1px solid gray;
+  padding: 6px;
+  box-shadow: 3px 3px 6px #999999;
+  margin-right: 6px;
+}
+
+#reference {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#reference a {
+  color: #255df5;
+}
+
+.odsazeni-article {
+  padding-top: 200px;
+}
+
+.odsazeni-sekce {
+  padding-top: 50px;
+}
+
+.domu-article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.reference-article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nadpis-reference {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.reference-sekce3 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.reference-sekce2 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.kontakt-article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.kontakt-formular {
+  grid-row: 3;
+  grid-column: 1;
+  justify-content: center;
+}
+
+.nadpis-kontakt {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.formular-sekce {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.formular-sekce p {
+  padding: 0 15px 0 0;
+}
+
+.formular {
+  width: 350px; 
+  height: 215px;
+  background-color: #99949476;
+  border-radius: 25px;
+}
+
+.odsazeni-formular {
+  margin: 0 0 0 -6px;
+  padding: 0 0 0 0;
+}
+
+.dovednosti-article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.article-ome {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.nadpis-ome {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.clanek-ome {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.zarovnani-text {
+  text-align: justify;
+}
+
+.cv-nahled {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+@media screen and (min-width: 500px) {  
+.formular {
+  width: 400px; 
+}
+}
+
+@media screen and (min-width: 600px) {
+
+article {
+  padding: 100px 10% 20px 10%;
+  flex: 1;
+  flex-shrink: 1;
+  text-shadow: 3px 3px 7px #000000;
+} 
+
+.formular {
+  width: 470px; 
+}
+}
+
+@media screen and (min-width: 920px) {
+
+.logo {
+  margin: 40px 0 0 11%;
+}
+
+.odsazeni-article {
+  padding-top: 250px;
+}
+
+.domu-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px max-content;
+}
+
+.domu-sekce p {
+  margin-right: 15px;
+}
+
+
+.odsazeni-sekce {
+  padding: 30px 0 20px 0;
+  margin: 0 2%;
+}
+
+
+
+.odsazeni-nadpis p {
+  font-size: 20px;
+  padding: 70px 0 0 0;
+  margin: 0 0 0 0;
+}
+
+
+.odsazeni-formular {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.domu-sekce {
+  width: 100%;
+  grid-row: 2;
+  grid-column: 1;
+  justify-content: left;
+}
+
+
+.obrazek {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column: 2;
+}
+
+.article-ome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100px max-content;
+}
+.nadpis-ome {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.clanek-ome {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.cv-nahled {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.dovednosti-article {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: 100px max-content;
+}
+
+.nadpis-dovednosti {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.tabulka1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.tabulka2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.tabulka3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.nadpis2 {
+  font-size: 18px;
+  grid-column: 1 / 4;
+  grid-row: 3;
+  margin: 0 0.628%;
+}
+
+.tabulka4 {
+  grid-column: 1;
+  grid-row: 4;
+} 
+
+.tabulka5 {
+  grid-column: 2;
+  grid-row: 4;
+} 
+
+.tabulka6 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.tabulka1, .tabulka2, .tabulka3, .tabulka4 {
+  display: inline-block;
+  justify-content: center; 
+}
+
+.tabulka1 td, .tabulka4 td {
+  padding: 0 25px 0 0;
+}
+
+.tabulka2 td {
+  padding: 0 25px 0 25px;
+}
+
+.tabulka3 td {
+  padding: 0 0 0 25px;
+}
+
+.reference-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px max-content;
+}
+
+.nadpis-reference {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.reference-sekce2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.reference-sekce3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.kontakt-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px max-content;
+}
+
+.formular-sekce {
+  width: 100%;
+  grid-row: 2;
+  grid-column: 1;
+  justify-content: left;
+}
+
+.kontakt-formular {
+  grid-row: 2;
+  grid-column: 2;
+  justify-content: center;
+}
+
+.formular {
+  width: 470px;
+}
+
+.uni {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: absolute;
+  height: 150px;
+}
+
+.zalozky {
+  grid-column: 2;
+  grid-row: 1;
+  grid-column-start: 2;
+  margin: 60px 0 0 0;
+}
+
+.socky {
+  margin: 43px 0 0 -10%;
+  grid-column: 3;
+}
+
+footer {
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+}
+
+.text-footer {
+  padding: 20px 0 0 0;
+}
+
+section {
+  color: white;
+  margin: 0 2%;
+  text-shadow: 3px 3px 7px #000000;
+  padding: 100px 0 20px 0;
+}
+
+}
+
+@media screen and (min-width: 1100px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .zalozky {
+    font-size: 20px;
+  }
+}
